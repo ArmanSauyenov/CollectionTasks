@@ -92,15 +92,15 @@ namespace Module13
 
             //task6
             string text = "be or not to be is a question";
-            List<string> Alen = new List<string>();
-            Alen = text.Split(' ').ToList();
+            List<string> words = new List<string>();
+            words = text.Split(' ').ToList();
             string bookva = "aoieu";
-            foreach (var item in Alen)
+            foreach (var item in words)
             {
                 if (bookva.Contains(item[0]))
                     Console.WriteLine(item);
             }
-            foreach (var item in Alen)
+            foreach (var item in words)
             {
                 if (!bookva.Contains(item[0]))
                     Console.WriteLine(item);
